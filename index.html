@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+
+        .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* آیتم‌ها در وسط قرار می‌گیرند */
+    gap: 40px; /* فاصله مساوی بین لینک‌ها */
+    padding: 14px 0;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+        .welcome {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .welcome h1 {
+            margin-bottom: 10px;
+        }
+
+        #searchInput {
+            padding: 10px;
+            width: 60%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .recipe-of-the-day {
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fefefe;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .recipe-of-the-day h2 {
+            margin-bottom: 20px;
+        }
+
+        .recipe-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .recipe-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .recipe-text ul {
+            padding-left: 20px;
+        }
+
+        .recipe-image img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .categories {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .categories h3 {
+            margin-bottom: 20px;
+        }
+
+        .category-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #87cefa;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .category-button:hover {
+            background-color: #5aa7d6;
+        }
+
+        @media (max-width: 768px) {
+            .recipe-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+
+            #searchInput {
+                width: 90%;
+            }
+        }
+
+        .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+}
+
+.footer a {
+    color: lightblue;
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="add_recipe.html">Add Recipe</a>
+        <a href="recipe_list.html">Recipe List</a>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h1>Welcome To My Recipe Book</h1>
+        <p>Explore delicious recipes for every occasion!</p>
+        <input type="text" id="searchInput" placeholder="Search by name or ingredients...">
+    </div>
+
+    <!-- Recipe of the Day -->
+    <div class="recipe-of-the-day">
+        <h2>Recipe of the Day: Chocolate Cake</h2>
+        <div class="recipe-content">
+            <div class="recipe-text">
+                <p><strong>Description:</strong> Indulge in this rich and moist chocolate cake, perfect for any celebration! Made with high-quality cocoa, plant-based ingredients, and topped with creamy vegan chocolate frosting.</p>
+                <ul>
+                    <li>Prep time: 15 mins</li>
+                    <li>Cook time: 30 mins</li>
+                    <li>Servings: 8</li>
+                    <li>100% Vegan 🌱</li>
+                </ul>
+            </div>
+            <div class="recipe-image">
+                <img src="0.jfif" alt="Chocolate cake">
+            </div>
+        </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+        <h3>Featured Categories:</h3>
+        <a href="desserts.html" class="category-button">Desserts</a>
+        <a href="vegan food.html" class="category-button">Vegan Food</a>
+        <a href="quick-meals.html" class="category-button">Quick Meals</a>
+        <a href="appetizers.html" class="category-button">Appetizers</a>
+    </div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 My Recipe Book. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#">Instagram</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Pinterest</a>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
